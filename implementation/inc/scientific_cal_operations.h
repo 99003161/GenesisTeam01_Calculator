@@ -8,5 +8,7 @@
 
 int add(int operand1, int operand2);
 
+float BMI(float weight,float height);
+
 #endif  /* #define __SCIENTIFIC_CAL_OPERATIONS_H__ */
 #endif // SCIENTIFIC_CAL_OPERATIONS_H_INCLUDED
