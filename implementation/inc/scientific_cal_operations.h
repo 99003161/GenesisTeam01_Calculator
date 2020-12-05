@@ -17,7 +17,7 @@ int power(int base,int exponent);
 int pos(int operand1);
 int neg(int operand1);
 int iszero(int operand1);
-int even/odd(int operand1);
+int evenodd(int operand1);
 int perc(int operand1, int operand2);
 int pmsq(int operand1, int operand2);
 int pmrq(int operand1);

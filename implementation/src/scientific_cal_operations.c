@@ -58,7 +58,7 @@ int prime(int operand1)
             //printf("%d is not a prime number.", operand1);
     }
 }
-int even/odd(int operand1)
+int evenodd(int operand1)
 {
      if(operand1 % 2 == 0)
         return 1;
@@ -67,6 +67,7 @@ int even/odd(int operand1)
         return 0;
         //printf("%d is odd.", operand1);
 }
+
 int factorial(int operand1)
 {
     unsigned long long fact = 1;
