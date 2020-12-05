@@ -85,4 +85,13 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    int final_year = present_year - birth_year;
    return final_year;
 }
+float sin(float operand)
+{
+ return sin(operand);
+}
+float cos(float operand)
+{
+	return cos(operand);
+}
+
 >>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
