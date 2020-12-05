@@ -85,13 +85,34 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    int final_year = present_year - birth_year;
    return final_year;
 }
-float sin(float operand)
+float sin_op(float operand)
 {
  return sin(operand);
 }
-float cos(float operand)
+float cos_op(float operand)
 {
 	return cos(operand);
 }
 
 >>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
+float tan_op(float operand)
+{
+    return tan(operand);
+
+}
+int blood_pressure(float bp_rate)
+{
+    if((bp_rate>=80)&&(bp_rate<=120))
+    {
+        return 1;
+    }
+    return 0;
+}
+int blood_sugar(float sugar_level)
+{
+    if((sugar_level>=70)&&(sugar_level<=130))
+    {
+        return 1;
+    }
+    return 0;
+}
