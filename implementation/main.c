@@ -8,4 +8,5 @@ int main()
     int d=4;
     int f=b+d;
     printf("%d",f);
+    int x=5;
 }
