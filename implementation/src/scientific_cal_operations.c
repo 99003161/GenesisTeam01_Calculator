@@ -169,7 +169,10 @@ float pythogoras(int side1,side2)
 {
     return sqrt((side1*side1)+(side2*side2));
 }
-
+float power(float x, float y)
+{
+    return (pow(x,y));
+}
 =======
 >>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
 >>>>>>> 0637bd22cd5a4be5549feccfb90def3487ba4e8d
