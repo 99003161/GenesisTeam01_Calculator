@@ -1,8 +1,11 @@
+#include<stdio.h>
 int main()
 {
-    exit 0;
+    //exit 0;
     int b=1;
-    int b=2;
+    //int b=2;
     int c=3;
     int d=4;
+    int f=b+d;
+    printf("%d",f);
 }
