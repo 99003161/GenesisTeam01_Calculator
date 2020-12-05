@@ -153,6 +153,11 @@ int blood_sugar(float sugar_level)
     }
     return 0;
 }
+float pythogoras(int side1,side2)
+{
+    return sqrt((side1*side1)+(side2*side2));
+}
+
 =======
 >>>>>>> 0637bd22cd5a4be5549feccfb90def3487ba4e8d
 >>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
