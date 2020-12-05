@@ -1,7 +1,7 @@
-#ifndef CALCULATOR_OPERATIONS_H_INCLUDED
-#define CALCULATOR_OPERATIONS_H_INCLUDED
-#ifndef __CALCULATOR_OPERATIONS_H__
-#define __CALCULATOR_OPERATIONS_H__
+#ifndef SCIENTIFIC_CAL_OPERATIONS_H_INCLUDED
+#define SCIENTIFIC_CAL_OPERATIONS_H_INCLUDED
+#ifndef __SCIENTIFIC_CAL_OPERATIONS_H__
+#define __SCIENTIFIC_CAL_OPERATIONS_H__
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
@@ -33,5 +33,5 @@ int cu(int operand1);
 int rev(int operand1);
 int volcube(int operand1);
 int volsp(int operand1);
-#endif  /* #define __CALCULATOR_OPERATIONS_H__ */
-#endif // CALCULATOR_OPERATIONS_H_INCLUDED
+#endif  /* #define __SCIENTIFIC_CAL_OPERATIONS_H__ */
+#endif // SCIENTIFIC_CAL_OPERATIONS_H_INCLUDED
