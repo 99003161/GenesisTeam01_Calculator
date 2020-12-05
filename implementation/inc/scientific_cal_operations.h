@@ -37,6 +37,15 @@ int volsp(int operand1);
 float BMI(float weight,float height);
 
 int age_calculator(int present_date, int present_month, int present_year, int birth_date, int birth_month, int birth_year);
-
+float sine(float  x);
+float cosine(float x);
+float tangent(float x);
+float sineh(float x);
+float cosineh(float x);
+float tangenth(float x);
+float logten(float x);
+float squareroot(float x);
+float exponent(float x);
+float power(float x,float y);
 #endif  /* #define __SCIENTIFIC_CAL_OPERATIONS_H__ */
 #endif // SCIENTIFIC_CAL_OPERATIONS_H_INCLUDED
