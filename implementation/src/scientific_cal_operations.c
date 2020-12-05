@@ -1,7 +1,13 @@
   
+<<<<<<< HEAD
 #include "scientific_cal_operations.h"
 
 int isprime(int operand1);
+=======
+//#include "scientific_cal_operations.h"
+=======
+ #include <calculator_operations.h>
+>>>>>>> 18d8cd4377a1acced7752f74d01c56ac47cc1040
 
 int add(int operand1, int operand2)
 {
@@ -41,7 +47,6 @@ int prime(int operand1)
             break;
         }
     }
-
     if (operand1 == 1) 
     {
         return 2;
@@ -56,7 +61,7 @@ int prime(int operand1)
             //printf("%d is not a prime number.", operand1);
     }
 }
-int even/odd(int operand1)
+int evenodd(int operand1)
 {
      if(operand1 % 2 == 0)
         return 1;
@@ -67,12 +72,9 @@ int even/odd(int operand1)
 }
 int factorial(int operand1)
 {
-    unsigned long long fact = 1;
-    printf("Enter an integer: ");
-    scanf("%d", &n);
-
+    int fact = 1;
     // shows error if the user enters a negative integer
-    if (n < 0)
+    if (operand1 < 0)
         return 0;
        // printf("Error! Factorial of a negative number doesn't exist.");
     else {
@@ -96,7 +98,15 @@ int cu(int operand1)
   result = cbrt(operand1);
   return result; 
 }
-
+int power(int base, int component)
+{
+    int result=1;
+    for(exponent;exponent>0;exponent--)
+    {
+        result=result*base;
+    }
+    return result;
+}
 float BMI(float weight,float height)
 {
 	return (weight/(height*height))
@@ -112,7 +122,35 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    int final_year = present_year - birth_year;
    return final_year; 
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+float sin_op(float operand)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
+float sin(float operand)
+>>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
+{
+ return sin(operand);
+}
+float cos_op(float operand)
+{
+	return cos(operand);
+}
+
+<<<<<<< HEAD
+=======
+>>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
+<<<<<<< HEAD
+float tan_op(float operand)
+{
+    return tan(operand);
+>>>>>>> 18d8cd4377a1acced7752f74d01c56ac47cc1040
 
 int blood_pressure(float bp_rate)
 {
@@ -135,7 +173,16 @@ float pythogoras(int side1,side2)
     return sqrt((side1*side1)+(side2*side2));
 }
 float power(float x, float y)
+<<<<<<< HEAD
 
+=======
+{
+    return (pow(x,y));
+}
+=======
+>>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
+>>>>>>> 0637bd22cd5a4be5549feccfb90def3487ba4e8d
+>>>>>>> 18d8cd4377a1acced7752f74d01c56ac47cc1040
 >>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
 float sine(float  x);
 float cosine(float x);
