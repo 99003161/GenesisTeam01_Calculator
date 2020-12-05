@@ -3,7 +3,6 @@
 //#include "scientific_cal_operations.h"
 =======
  #include <calculator_operations.h>
-int isprime(int operand1);
 >>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
 
 int add(int operand1, int operand2)
@@ -99,7 +98,15 @@ int cu(int operand1)
   result = cbrt(operand1);
   return result; 
 }
-
+int power(int base, int component)
+{
+    int result=1;
+    for(exponent;exponent>0;exponent--)
+    {
+        result=result*base;
+    }
+    return result;
+}
 float BMI(float weight,float height)
 {
 	return (weight/(height*height))
@@ -115,8 +122,6 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    int final_year = present_year - birth_year;
    return final_year; 
 }
-<<<<<<< HEAD
-=======
 float sin(float operand)
 {
  return sin(operand);
@@ -126,5 +131,4 @@ float cos(float operand)
 	return cos(operand);
 }
 
->>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
 >>>>>>> 0637bd22cd5a4be5549feccfb90def3487ba4e8d

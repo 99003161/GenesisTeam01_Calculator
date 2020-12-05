@@ -13,6 +13,7 @@ int multiply(int operand1, int operand2);
 int divide(int operand1, int operand2);
 int modulodivision(int operand1,int operand2);
 int prime(int operand1);
+int power(int base,int exponent);
 int pos(int operand1);
 int neg(int operand1);
 int iszero(int operand1);
