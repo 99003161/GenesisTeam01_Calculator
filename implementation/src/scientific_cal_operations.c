@@ -140,7 +140,7 @@ int factorial(int operand1)
 
 
 
-  /* Recursively calculate Factorial of the number */
+  
 
   return operand1 * factorial(operand1-1);
 
