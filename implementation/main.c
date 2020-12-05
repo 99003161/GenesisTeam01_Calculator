@@ -9,4 +9,5 @@ int main()
     int f=b+d;
     printf("%d",f);
     int x=5;
+    int z=420;
 }
