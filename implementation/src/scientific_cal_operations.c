@@ -122,13 +122,55 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    int final_year = present_year - birth_year;
    return final_year; 
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+float sin_op(float operand)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
 float sin(float operand)
+>>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
 {
  return sin(operand);
 }
-float cos(float operand)
+float cos_op(float operand)
 {
 	return cos(operand);
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
+<<<<<<< HEAD
+float tan_op(float operand)
+{
+    return tan(operand);
+
+}
+int blood_pressure(float bp_rate)
+{
+    if((bp_rate>=80)&&(bp_rate<=120))
+    {
+        return 1;
+    }
+    return 0;
+}
+int blood_sugar(float sugar_level)
+{
+    if((sugar_level>=70)&&(sugar_level<=130))
+    {
+        return 1;
+    }
+    return 0;
+}
+float pythogoras(int side1,side2)
+{
+    return sqrt((side1*side1)+(side2*side2));
+}
+
+=======
+>>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
 >>>>>>> 0637bd22cd5a4be5549feccfb90def3487ba4e8d
+>>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
