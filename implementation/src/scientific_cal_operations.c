@@ -3,7 +3,6 @@
 //#include "scientific_cal_operations.h"
 =======
  #include <calculator_operations.h>
->>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
 
 int add(int operand1, int operand2)
 {
@@ -43,7 +42,6 @@ int prime(int operand1)
             break;
         }
     }
-
     if (operand1 == 1) 
     {
         return 2;
@@ -67,15 +65,11 @@ int evenodd(int operand1)
         return 0;
         //printf("%d is odd.", operand1);
 }
-
 int factorial(int operand1)
 {
-    unsigned long long fact = 1;
-    printf("Enter an integer: ");
-    scanf("%d", &n);
-
+    int fact = 1;
     // shows error if the user enters a negative integer
-    if (n < 0)
+    if (operand1 < 0)
         return 0;
        // printf("Error! Factorial of a negative number doesn't exist.");
     else {
