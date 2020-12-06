@@ -9,7 +9,7 @@ SRC = src/scientific_cal_operations.c\
 main.c
 
 # All test source files
-TEST_SRC = unity/unity.c\
+TEST_SRC = Unity/unity.c\
 src/scientific_cal_operations.c\
 test/test_scientific_cal_operations.c
 
