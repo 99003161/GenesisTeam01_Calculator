@@ -7,7 +7,7 @@ enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENO
 void calculator_menu(void);
 
 /* Start of the application */
-int main(int argc, char *argv[])
+int main()
 {
     printf("\n****Calculator****\n");
     while(1)
@@ -56,7 +56,7 @@ void calculator_menu(void)
             
             break;
         case MODULODIVISION:
-            printf("Enter the numbers to find modulus:\n")
+            printf("Enter the numbers to find modulus:\n");
             scanf("%d %d",&a,&b);
             modulodivision(a, b);
             
@@ -156,12 +156,12 @@ void calculator_menu(void)
            break;  
        case TANGENTH:
             scanf("%f",&angle);
-           tangenth(angle)
+           tangenth(angle);
           
            break;  
        case RIGHT_SHIFT:
             scanf("%d %d",&operand2,&shift_value);
-          right_shift(operand2, shift_value)
+          right_shift(operand2, shift_value);
            
            break;  
        case LEFT_SHIFT:
@@ -171,21 +171,21 @@ void calculator_menu(void)
            break;  
        case BIT_AND:
             scanf("%d %d",&operand3,&operand4);
-          bit_and(operand3, operand4)
+          bit_and(operand3, operand4);
            
            break; 
        case BIT_OR:
             scanf("%d %d",&operand3,&operand4);
-         bit_or(operand3, operand4)
+         bit_or(operand3, operand4);
          
            break;  
        case BIT_XOR:
             scanf("%d %d",&operand3,&operand4);
-          bit_xor(operand3, operand4)
+          bit_xor(operand3, operand4);
            
            break;
        case BIT_COMPLEMENT:
-          bit_complement(operand1)
+          bit_complement(operand1);
            break; 
        case POUND_TO_KG:
             scanf("%d",&weight);
@@ -213,8 +213,4 @@ void calculator_menu(void)
             printf("\n\t---It should never come here---\n");
     }
 }
-int valid_operation(int operation)
-{
-    /* Check if the operation is a valid operation */
-    return ((ADD <= operation) && (EXIT >= operation)) ? VALID: INVALID;
-}
+
