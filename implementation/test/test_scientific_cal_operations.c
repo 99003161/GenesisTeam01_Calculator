@@ -17,6 +17,11 @@ void test_odd(void);
 void test_factorial(void);
 void test_sq(void);
 void test_cu(void);
+void test_BMI(void);
+void test_blood_pressure(void);
+void test_blood_sugar(void);
+void test_pythogoras(void);
+void test_pound_to_kg(void);
 
 /* Required by the unity test framework */
 void setUp(){}
@@ -42,6 +47,11 @@ int main()
   RUN_TEST(test_factorial);
   RUN_TEST(test_sq);
   RUN_TEST(test_cu);
+  RUN_TEST(test_BMI);
+  RUN_TEST(test_blood_pressure);
+  RUN_TEST(test_blood_sugar);
+  RUN_TEST(test_pythogoras);
+  RUN_TEST(test_pound_to_kg);
   
 
   /* Close the Unity Test Framework */
@@ -97,4 +107,29 @@ void test_sq(void)
 void test_cu(void)
 {
     TEST_ASSERT_EQUAL(3,cu(9));
+}
+void test_BMI(void)
+{
+    TEST_ASSERT_EQUAL(8,BMI(200,5);
+}
+//void test_age_calculator(void)
+void test_blood_pressure(void)
+{
+    TEST_ASSERT_EQUAL(1,blood_pressure(80));
+}
+void test_blood_sugar(void)
+{
+    TEST_ASSERT_EQUAL(1,blood_sugar(70));
+}
+void test_BPM(void)
+{
+    TEST_ASSERT_EQUAL(1,heart_rate(60));
+}
+void test_pythogoras(void)
+{
+    TEST_ASSERT_EQUAL(5,pythogoras(3,4));
+}
+void test_pound_to_kg(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT(9.07184,test_pound_to_kg(20));
 }
