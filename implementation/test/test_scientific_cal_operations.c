@@ -147,11 +147,11 @@ void test_sine(void)
 }
 void test_tangent(void)
 {
-  TEST_ASSERT_EQUAL_FLOAT_MESSAGE(1.191753,tangent(50),"value is obtained as expected");
+  TEST_ASSERT_EQUAL_FLOAT_MESSAGE(1.000000,tangent(45),"value is obtained as expected");
 }  
 void test_bit_and(void)
 {
-  TEST_ASSERT_EQUAL(7,bit_and(3,4));
+  TEST_ASSERT_EQUAL(0,bit_and(0,1));
 }
 void test_bit_xor(void)
 {
