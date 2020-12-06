@@ -68,33 +68,33 @@ void test_divide(void)
 }
 void test_modulodivision(void)
 {
-   TEST_ASSERT_EQUAL(0, test_modulodivision(1, 0));
+   TEST_ASSERT_EQUAL(0, modulodivision(1, 0));
 }
 void test_isprime(void)
 {
-    TEST_ASSERT_EQUAL(1,test_isprime(2));
+    TEST_ASSERT_EQUAL(1,isprime(2));
 }
 void test_isnotprime(void)
 {
-    TEST_ASSERT_EQUAL(0,test_isprime(6));
+    TEST_ASSERT_EQUAL(0,isprime(6));
 }
 void test_even(void)
 {
-    TEST_ASSERT_EQUAL(1,test_evenodd(2));
+    TEST_ASSERT_EQUAL(1,evenodd(2));
 }
 void test_odd(void)
 {
-    TEST_ASSERT_EQUAL(0,test_evenodd(3));
+    TEST_ASSERT_EQUAL(0,evenodd(3));
 }
 void test_factorial(void)
 {
-    TEST_ASSERT_EQUAL(120,test_factorial(5));
+    TEST_ASSERT_EQUAL(120,factorial(5));
 }
 void test_sq(void)
 {
-    TEST_ASSERT_EQUAL(5,test_sq(25));
+    TEST_ASSERT_EQUAL(5,sq(25));
 }
 void test_cu(void)
 {
-    TEST_ASSERT_EQUAL(3,test_cu(9));
+    TEST_ASSERT_EQUAL(3,cu(9));
 }
