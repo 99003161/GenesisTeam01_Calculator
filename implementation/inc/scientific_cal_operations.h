@@ -7,7 +7,6 @@
 #include <stdio_ext.h>
 //#include<conio.h>
 #include<math.h>
-#include<bits/stdc++.h>
 
 int add(int operand1, int operand2);
 int subtract(int operand1, int operand2);
