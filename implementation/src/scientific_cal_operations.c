@@ -1,13 +1,6 @@
-  
-<<<<<<< HEAD
-#include "scientific_cal_operations.h"
 
-int isprime(int operand1);
-=======
-//#include "scientific_cal_operations.h"
-=======
- #include <calculator_operations.h>
->>>>>>> 18d8cd4377a1acced7752f74d01c56ac47cc1040
+#include "scientific_cal_operations.h"
+#define PI 3.14159265
 
 int add(int operand1, int operand2)
 {
@@ -37,7 +30,7 @@ int modulodivision(int operand1, operand2)
     else
         return operand1 % operand2;
 }
-int prime(int operand1)
+int isprime(int operand1)
 {   int flag=0;
     for (int i = 2; i <= operand1 / 2; ++i) 
     {
@@ -122,19 +115,8 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    int final_year = present_year - birth_year;
    return final_year; 
 }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 float sin_op(float operand)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
-float sin(float operand)
->>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
 {
  return sin(operand);
 }
@@ -143,14 +125,10 @@ float cos_op(float operand)
 	return cos(operand);
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
-<<<<<<< HEAD
 float tan_op(float operand)
 {
     return tan(operand);
->>>>>>> 18d8cd4377a1acced7752f74d01c56ac47cc1040
+}
 
 int blood_pressure(float bp_rate)
 {
@@ -173,24 +151,34 @@ float pythogoras(int side1,int side2)
     return sqrt((side1*side1)+(side2*side2));
 }
 float power(float x, float y)
-<<<<<<< HEAD
 
-=======
 {
     return (pow(x,y));
 }
-=======
->>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
->>>>>>> 0637bd22cd5a4be5549feccfb90def3487ba4e8d
->>>>>>> 18d8cd4377a1acced7752f74d01c56ac47cc1040
->>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
-float sine(float  x);
-float cosine(float x);
-float tangent(float x);
-float sineh(float x);
-float cosineh(float x);
-float tangenth(float x);
-float logten(float x);
-float squareroot(float x);
-float exponent(float x);
-float power(float x,float y);
+
+
+
+float sine(float x)
+{
+return (sin (x*PI/180));
+}
+float cosine(float x)
+ {
+return (cos (x*PI/180));
+}
+float tangent(float x)
+{
+return (tan(x));
+}
+float sineh(float x)
+{
+return (sinh(x));
+}
+float cosineh(float x)
+{
+return (cosh(x));
+}
+ float tangenth(float x)
+ {
+return (tanh(x));
+}
