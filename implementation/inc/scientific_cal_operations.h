@@ -24,6 +24,7 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
 
 int blood_pressure(float bp_rate);
 int blood_sugar(float sugar_level);
+int BPM(int heart_beat);
 float pythogoras(int side1,int side2);
 int pound_to_kg(int weight);
 int mile_to_km(int distance);

@@ -133,6 +133,14 @@ int blood_sugar(float sugar_level)
     }
     return 0;
 }
+int BPM(int heart_rate)
+{
+    if((heart_rate>=60)&&(heart_rate<=100))
+    {
+        return 1;
+    }
+    return 0;
+}
 float pythogoras(int side1,int side2)
 {
     return sqrt((side1*side1)+(side2*side2));
