@@ -2,7 +2,7 @@
 
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQUARE_ROOT,CUBE_ROOT,BMI,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,BPM,PYTHOGORAS,POWER,SINE,COSINE,TANGENT,SINEH,COSINEH,TANGENTH,RIGHT_SHIFT,LEFT_SHIFT,BIT_AND,BIT_OR,BIT_XOR,BIT_COMPLEMENT,POUND_TO_KG,MILE_TO_KM,CELSIUS_TO_FARANHEIT,INCH_TO_CM,EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQUARE_ROOT,CUBE_ROOT,BMI1,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,BPM1,PYTHOGORAS,POWER,SINE,COSINE,TANGENT,SINEH,COSINEH,TANGENTH,RIGHT_SHIFT,LEFT_SHIFT,BIT_AND,BIT_OR,BIT_XOR,BIT_COMPLEMENT,POUND_TO_KG,MILE_TO_KM,CELSIUS_TO_FARANHEIT,INCH_TO_CM,EXIT };
 /* Display the menu of operations supported */
 void calculator_menu(void);
 
@@ -22,7 +22,7 @@ void calculator_menu(void)
     int operand1,operand2,operand3,operand4,shift_value,a,b,weight,height, present_date, present_month, present_year,birth_date, birth_month,birth_year,side1,side2,length,distance,temperature,heart_beat;
     float angle,bp_rate,sugar_level;
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulodivision\n6. Power\n7. Square_root\n8. Factorial\n9. Evenodd\n10. isprime\n11. bmi\n12. Age_calculator\n13. blood_pressure\n14. blood_sugar\15. bpm\16. pythogaras\17. pound_to_kg\18. mile_to_km\19. celsius_to_faranheit\20. inch_to_cm\21. pound_to_kg\22. sine\23. cosine\24. tangent\25. sineh\26. cosineh\27. tangenth\28. rightshift\29. leftshift\30. bit_and\31. bit_or\32. bit_xor\33. bit_complement\34. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulodivision\n6. Power\n7. Square_root\n8. Factorial\n9. Evenodd\n10. isprime\n11. BMI\n12. Age_calculator\n13. blood_pressure\n14. blood_sugar\15. BPM\16. pythogaras\17. pound_to_kg\18. mile_to_km\19. celsius_to_faranheit\20. inch_to_cm\21. pound_to_kg\22. sine\23. cosine\24. tangent\25. sineh\26. cosineh\27. tangenth\28. rightshift\29. leftshift\30. bit_and\31. bit_or\32. bit_xor\33. bit_complement\34. Exit");
     printf("\n\tEnter your choice\n");
     
     scanf("%d", &calculator_operation);
@@ -93,7 +93,7 @@ void calculator_menu(void)
             cu(operand1);
             
             break;
-        case bmi:
+        case BMI1:
             
             scanf("%d %d",&weight,&height);
             BMI(weight,height);
@@ -117,7 +117,7 @@ void calculator_menu(void)
            blood_sugar(sugar_level);
           
            break;
-       case bpm:
+       case BPM1:
             
             scanf("%d",&heart_beat);
            BPM(heart_beat);
