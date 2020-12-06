@@ -22,6 +22,10 @@ void test_blood_pressure(void);
 void test_blood_sugar(void);
 void test_pythogoras(void);
 void test_pound_to_kg(void);
+void test_sine(void);
+void test_tangent(void);
+void test_bit_and(void);
+void test_bit_xor(void);
 
 /* Required by the unity test framework */
 void setUp(){}
@@ -52,6 +56,10 @@ int main()
   RUN_TEST(test_blood_sugar);
   RUN_TEST(test_pythogoras);
   RUN_TEST(test_pound_to_kg);
+  RUN_TEST(test_sine);
+  RUN_TEST(test_tangent);
+  RUN_TEST(test_bit_and);
+  RUN_TEST(test_bit_xor);
   
 
   /* Close the Unity Test Framework */
@@ -133,3 +141,19 @@ void test_pound_to_kg(void)
 {
     TEST_ASSERT_EQUAL_FLOAT_MESSAGE(9.07184,pound_to_kg(20),"EXPECTED");
 }
+void test_sine(void)
+{
+  TEST_ASSERT_EQUAL_FLOAT_MESSAGE(0.500000,sine(30),"value is obtained");
+}
+void test_tangent(void)
+{
+  TEST_ASSERT_EQUAL_FLOAT_MESSAGE(1.191753,tangent(50),"value is obtained as expected");
+}  
+void test_bit_and(void)
+{
+  TEST_ASSERTS_EQUAL(7,bit_and(3,4));
+}
+void test_bit_xor(void)
+{
+  TEST_ASSERT_EQUAL(1,bit_xor(4,5));
+} 
