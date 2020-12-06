@@ -8,11 +8,28 @@
 unsigned int calculator_operation = 0;
 
 /* Operands on which calculation is performed */
-int calculator_operand1 = 0;
-int calculator_operand2 = 0;
+int operand1 = 0;
+int operand2 = 0;
+int operand=0;
+int weight=0;
+int height=0;
+int present_date=0;
+int present_month=0;
+int present_year=0;
+int birth_date=0;
+int birth_month=0;
+int birth_year=0;
+float bp_rate=0;
+float sugar_level=0;
+int side1=0;
+int side2=0;
+float angle=0;
+int shift_value=0;
+int operand3=0; 
+int operand4=0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQ,CU,BMI,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,PYTHOGORAS,POWER,SINE,COSINE,TANGENT, SQUARE_ROOT, FACTORIAL, INVERSE, CURRENCY, LENGTH, TIME, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQUARE_ROOT,CUBE_ROOT,BMI,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,PYTHOGORAS,POWER,SINE,COSINE,TANGENT,SINEH,COSINEH,TANGENTH,RIGHT_SHIFT,LEFT_SHIFT,BIT_AND,BIT_OR,BIT_XOR,BIT_COMPLEMENT,EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -62,110 +79,123 @@ void calculator_menu(void)
     switch(calculator_operation)
     {
         case ADD:
-            printf("\n\t%d + %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            add(calculator_operand1, calculator_operand2));
-            
+            add(operand1, operand2);
             __fpurge(stdin);
-            getchar();
             break;
         case SUBTRACT:
-            printf("\n\t%d - %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            subtract(calculator_operand1, calculator_operand2));
-            
+            subtract(operand1, operand2);
             __fpurge(stdin);
-            getchar();
             break;
         case MULTIPLY:
-            printf("\n\t%d * %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            multiply(calculator_operand1, calculator_operand2));
-            
+            multiply(operand1, operand2);
             __fpurge(stdin);
-            getchar();
             break;
         case DIVIDE:
-            printf("\n\t%d / %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            divide(calculator_operand1, calculator_operand2));
-            
+            divide(operand1, operand2);
             __fpurge(stdin);
-            getchar();
             break;
-        case MODULO:
-            printf("\n\t%d % %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            modulo(calculator_operand1, calculator_operand2));
-            
+        case MODULODIVISION:
+            modulodivision(operand1, operand2);
             __fpurge(stdin);
-            getchar();
             break;
          case POWER:
-            printf("\n\t%d ^ %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            power(calculator_operand1, calculator_operand2));
-            
+            power(operand1, operand2);
             __fpurge(stdin);
-            getchar();
             break;
          case SQUARE_ROOT:
-            printf("\n\tsqrt(%d) = %d\nEnter to continue", 
-            calculator_operand1, 
-            squareroot(calculator_operand1));
-            
+            sq(operand1);
             __fpurge(stdin);
-            getchar();
             break; 
          case FACTORIAL:
-            printf("\n\t%d! = %d\nEnter to continue", 
-            calculator_operand1, 
-            factorial(calculator_operand1));
-            
+            factorial(operand1);
             __fpurge(stdin);
-            getchar();
             break;
-          case INVERSE:
+          case ISPRIME:
             printf("\n\t1 / %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            inverse(calculator_operand1));
-            
+            operand1, 
+            isprime(operand1);
             __fpurge(stdin);
-            getchar();
             break;
-        case CURRENCY:
+        case EVENODD:
             printf("\n\t%d US Dolars = %d Indian Rupees\nEnter to continue", 
-            calculator_operand1, 
-            currency(calculator_operand1));
-            
+            operand1, 
+            evenodd(operand1);
             __fpurge(stdin);
-            getchar();
             break;
-        case LENGTH:
-            printf("\n\t%d Feet = %d Inches\nEnter to continue", 
-            calculator_operand1, 
-            length(calculator_operand1));
-            
+        case CUBE_ROOT:
+            cu(operand1);
             __fpurge(stdin);
-            getchar();
             break;
-        case TIME:
-            printf("\n\t%d Hours = %d Minutes\nEnter to continue", 
-            calculator_operand1, 
-            time(calculator_operand1));
-            
+        case BMI:
+            BMI(weight,height);
             __fpurge(stdin);
-            getchar();
             break;
-      case 13:
+      case AGE_CALCULATOR:
+            age_calculator(int present_date, int present_month, int present_year, int birth_date, int birth_month, int birth_year)
+            __fpurge(stdin);
+            break;
+      case BLOOD_PRESSURE:
+           blood_pressure(float bp_rate);
+           __fpurge(stdin);
+           break;
+       case BLOOD_SUGAR:
+           blood_sugar(float sugar_level);
+           __fpurge(stdin);
+           break;
+       case PYTHOGORAS:
+           pythogoras(int side1,int side2);
+           __fpurge(stdin);
+           break;
+       case SINE:
+           sine(float angle);
+           __fpurge(stdin);
+           break; 
+       case COSINE:
+           cosine(float angle);
+           __fpurge(stdin);
+           break;  
+       case TANGENT:
+           tangent(float angle);
+           __fpurge(stdin);
+           break;   
+       case SINEH:
+           sineh(float angle);
+           __fpurge(stdin);
+           break;  
+       case COSINEH:
+           cosineh(float angle);
+           __fpurge(stdin);
+           break;  
+       case TANGENTH:
+           tangenth(float angle)
+           __fpurge(stdin);
+           break;  
+       case RIGHT_SHIFT:
+          right_shift(int operand, int shift_value)
+           __fpurge(stdin);
+           break;  
+       case LEFT_SHIFT:
+          left_shift(int opearnd, int shift_value);
+           __fpurge(stdin);
+           break;  
+       case BIT_AND:
+          bit_and(int operand3, int operand4)
+           __fpurge(stdin);
+           break; 
+       case BIT_OR:
+         bit_or(int operand3, int operand4)
+           __fpurge(stdin);
+           break;  
+       case BIT_XOR:
+          bit_xor(int operand3, int operand4)
+           __fpurge(stdin);
+           break;
+       case BIT_COMPLEMENT:
+          bit_complement(int operand3)
+           break; 
+       case :
             exit(0);
-            break;
+            break; 
         default:
             printf("\n\t---It should never come here---\n");
     }

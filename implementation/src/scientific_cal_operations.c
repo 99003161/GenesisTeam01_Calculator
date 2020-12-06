@@ -123,69 +123,69 @@ float pythogoras(int side1,int side2)
 {
     return sqrt((side1*side1)+(side2*side2));
 }
-float power(float x, float y)
+int power(int operand1, int operand2)
 {
-    return (pow(x,y));
+    return (pow(operand1,operand2));
 }
-float sine(float x)
+float sine(float angle)
 {
-return (sin (x*PI/180));
+    return (sin (angle*PI/180));
 }
-float cosine(float x)
+float cosine(float angle)
  {
-return (cos (x*PI/180));
+    return (cos (angle*PI/180));
 }
-float tangent(float x)
+float tangent(float angle)
 {
-return (tan(x));
+    return (tan(angle));
 }
-float sineh(float x)
+float sineh(float angle)
 {
-return (sinh(x));
+    return (sinh(angle));
 }
-float cosineh(float x)
+float cosineh(float angle)
 {
-return (cosh(x));
+    return (cosh(angle));
 }
- float tangenth(float x)
+ float tangenth(float angle)
  {
-return (tanh(x));
+    return (tanh(angle));
 }
 
-int right_shift(int num, int i)
+int right_shift(int operand, int shift_value)
 {
 	int result;
-	result=num>>i;
+	result=operand>>shift_value;
 	return result;
 }	
-int left_shift(int num, int i)
+int left_shift(int opearnd, int shift_value)
 {
 	int result;
-	result=num<<i;
+	result=operand<<shift_value;
 	return result;
 }
 
-int bit_and(int a, int b)
+int bit_and(int operand3, int operand4)
 {
 	int result;
-	result= a&b;
+	result= operand3&operand4;
 	return result;
 }
- int bit_or(int a, int b)
+ int bit_or(int operand3, int operand4)
 {
 	int result;
-	result= a|b;
+	result= operand3|operand4;
 	return result;
 }
-int bit_xor(int a, int b)
+int bit_xor(int operand3, int operand4)
 {
 	int result;
-	result= a^b;
+	result= operand3^operand4;
 	return result;
 }
-int bit_complement(int a)
+int bit_complement(int operand3)
 {
 	int result;
-	result= ~a;
+	result= ~operand3;
 	return result;
 }
