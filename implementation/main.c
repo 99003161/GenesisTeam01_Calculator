@@ -13,6 +13,9 @@ int operand2 = 0;
 int operand=0;
 int weight=0;
 int height=0;
+int distance=0;
+int temperature=0;
+int length;
 int present_date=0;
 int present_month=0;
 int present_year=0;
@@ -29,7 +32,7 @@ int operand3=0;
 int operand4=0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQUARE_ROOT,CUBE_ROOT,BMI,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,PYTHOGORAS,POWER,SINE,COSINE,TANGENT,SINEH,COSINEH,TANGENTH,RIGHT_SHIFT,LEFT_SHIFT,BIT_AND,BIT_OR,BIT_XOR,BIT_COMPLEMENT,EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQUARE_ROOT,CUBE_ROOT,BMI,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,PYTHOGORAS,POWER,SINE,COSINE,TANGENT,SINEH,COSINEH,TANGENTH,RIGHT_SHIFT,LEFT_SHIFT,BIT_AND,BIT_OR,BIT_XOR,BIT_COMPLEMENT,POUND_TO_KG,MILLE_TO_KM,CELSIUS_TO_FARANHEIT,INCH_TO_CM,EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -193,7 +196,19 @@ void calculator_menu(void)
        case BIT_COMPLEMENT:
           bit_complement(int operand3)
            break; 
-       case :
+       case POUND_TO_KG:
+          pound_to_kg(int weight);
+           break; 
+       case MILE_TO_KM:
+          mile_to_km(int distance);
+           break; 
+       case CELSIUS_TO_FARANHEIT:
+          celsius_to_faranheit(int temperature);
+           break; 
+       case INCH_TO_CM:
+          inch_to_cm(int length);
+           break; 
+       case 34:
             exit(0);
             break; 
         default:
