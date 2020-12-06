@@ -23,7 +23,6 @@ void test_blood_sugar(void);
 void test_pythogoras(void);
 void test_pound_to_kg(void);
 void test_sine(void);
-void test_tangent(void);
 void test_bit_and(void);
 void test_bit_xor(void);
 
@@ -57,7 +56,6 @@ int main()
   RUN_TEST(test_pythogoras);
   RUN_TEST(test_pound_to_kg);
   RUN_TEST(test_sine);
-  RUN_TEST(test_tangent);
   RUN_TEST(test_bit_and);
   RUN_TEST(test_bit_xor);
   
@@ -145,10 +143,6 @@ void test_sine(void)
 {
   TEST_ASSERT_EQUAL_FLOAT_MESSAGE(0.500000,sine(30),"value is obtained");
 }
-void test_tangent(void)
-{
-  TEST_ASSERT_EQUAL_FLOAT_MESSAGE(1.000000,tangent(45),"value is obtained as expected");
-}  
 void test_bit_and(void)
 {
   TEST_ASSERT_EQUAL(0,bit_and(0,1));
