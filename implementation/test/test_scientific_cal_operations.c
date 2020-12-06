@@ -131,5 +131,5 @@ void test_pythogoras(void)
 }
 void test_pound_to_kg(void)
 {
-    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(9.07184,test_pound_to_kg(20),"EXPECTED");
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(9.07184,pound_to_kg(20),"EXPECTED");
 }
