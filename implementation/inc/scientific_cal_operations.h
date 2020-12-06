@@ -32,5 +32,12 @@ float tangent(float x);
 float sineh(float x);
 float cosineh(float x);
  float tangenth(float x);
+
+int right_shift(int num, int i);
+int left_shift(int num, int i);
+int bit_and(int a, int b);
+ int bit_or(int a, int b);
+int bit_xor(int a, int b);
+int bit_complement(int a);
 #endif  /* #define __SCIENTIFIC_CAL_OPERATIONS_H__ */
 #endif // SCIENTIFIC_CAL_OPERATIONS_H_INCLUDED
