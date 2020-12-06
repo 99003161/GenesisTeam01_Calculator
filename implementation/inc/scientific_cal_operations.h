@@ -22,7 +22,12 @@ int BMI(int weight,int height);
 int age_calculator(int present_date, int present_month, int present_year, int birth_date, int birth_month, int birth_year);
 int blood_pressure(float bp_rate);
 int blood_sugar(float sugar_level);
+<<<<<<< HEAD
 int pythogoras(int side1,int side2);
+=======
+int BPM(int heart_beat);
+float pythogoras(int side1,int side2);
+>>>>>>> 44e0c745713df40a9785d3ba53cfd940234b78b5
 int pound_to_kg(int weight);
 int mile_to_km(int distance);
 int celsius_to_faranheit(int temperature);
