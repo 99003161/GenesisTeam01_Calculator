@@ -123,7 +123,7 @@ void test_blood_sugar(void)
 }
 void test_BPM(void)
 {
-    TEST_ASSERT_EQUAL(1,heart_rate(60));
+    TEST_ASSERT_EQUAL(1,BPM(60));
 }
 void test_pythogoras(void)
 {
