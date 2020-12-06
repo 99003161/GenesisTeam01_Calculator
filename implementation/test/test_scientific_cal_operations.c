@@ -151,7 +151,7 @@ void test_tangent(void)
 }  
 void test_bit_and(void)
 {
-  TEST_ASSERTS_EQUAL(7,bit_and(3,4));
+  TEST_ASSERT_EQUAL(7,bit_and(3,4));
 }
 void test_bit_xor(void)
 {
