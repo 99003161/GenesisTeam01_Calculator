@@ -12,6 +12,7 @@ int operand1 = 0;
 int operand2 = 0;
 int operand=0;
 int weight=0;
+int heart_beat=0;
 int height=0;
 int distance=0;
 int temperature=0;
