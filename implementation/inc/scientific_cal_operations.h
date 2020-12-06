@@ -34,9 +34,7 @@ int cu(int operand1);
 int rev(int operand1);
 int volcube(int operand1);
 int volsp(int operand1);
-
 float BMI(float weight,float height);
-
 int age_calculator(int present_date, int present_month, int present_year, int birth_date, int birth_month, int birth_year);
 float sine(float  x);
 float cosine(float x);
