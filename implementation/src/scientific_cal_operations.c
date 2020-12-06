@@ -91,7 +91,7 @@ int cu(int operand1)
 }
 int BMI(int weight,int height)
 {
-	return (weight/(height*height))
+	return (weight/(height*height));
 }
 int age_calculator(int present_date, int present_month, int present_year, int birth_date, int birth_month, int birth_year) {
    if (birth_date > present_date) {
@@ -141,11 +141,11 @@ int mile_to_km(int distance)
 }
 int celsius_to_faranheit(int temperature)
 {
-    return ((temp*(9/5))+32);
+    return ((temperature*(9/5))+32);
 }
 int inch_to_cm(int length)
 {
-    return (len*2.54);
+    return (length*2.54);
 }
 int power(int operand1, int operand2)
 {
@@ -182,7 +182,7 @@ int right_shift(int operand, int shift_value)
 	result=operand>>shift_value;
 	return result;
 }	
-int left_shift(int opearnd, int shift_value)
+int left_shift(int operand, int shift_value)
 {
 	int result;
 	result=operand<<shift_value;
