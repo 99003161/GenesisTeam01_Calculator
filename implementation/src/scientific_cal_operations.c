@@ -119,9 +119,6 @@ int blood_sugar(float sugar_level)
     }
     return 0;
 }
-<<<<<<< HEAD
-int pythogoras(int side1,int side2)
-=======
 int BPM(int heart_rate)
 {
     if((heart_rate>=60)&&(heart_rate<=100))
@@ -130,8 +127,7 @@ int BPM(int heart_rate)
     }
     return 0;
 }
-float pythogoras(int side1,int side2)
->>>>>>> 44e0c745713df40a9785d3ba53cfd940234b78b5
+int pythogoras(int side1,int side2)
 {
     return sqrt((side1*side1)+(side2*side2));
 }
@@ -151,7 +147,7 @@ int inch_to_cm(int length)
 {
     return (len*2.54);
 }
-float power(float operand1, float operand2)
+int power(int operand1, int operand2)
 {
     return (pow(operand1,operand2));
 }

@@ -31,15 +31,12 @@ float angle=0;
 int shift_value=0;
 int operand3=0; 
 int operand4=0;
-
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQUARE_ROOT,CUBE_ROOT,BMI,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,PYTHOGORAS,POWER,SINE,COSINE,TANGENT,SINEH,COSINEH,TANGENTH,RIGHT_SHIFT,LEFT_SHIFT,BIT_AND,BIT_OR,BIT_XOR,BIT_COMPLEMENT,POUND_TO_KG,MILLE_TO_KM,CELSIUS_TO_FARANHEIT,INCH_TO_CM,EXIT };
-
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQUARE_ROOT,CUBE_ROOT,BMI,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,BPM,PYTHOGORAS,POWER,SINE,COSINE,TANGENT,SINEH,COSINEH,TANGENTH,RIGHT_SHIFT,LEFT_SHIFT,BIT_AND,BIT_OR,BIT_XOR,BIT_COMPLEMENT,POUND_TO_KG,MILLE_TO_KM,CELSIUS_TO_FARANHEIT,INCH_TO_CM,EXIT };
 /* Display the menu of operations supported */
 void calculator_menu(void);
 /* Verifies the requested operations validity */
 int valid_operation(int operation);
-
 
 /* Start of the application */
 int main(int argc, char *argv[])
@@ -54,12 +51,10 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulo\n6. Power\n7. Square_root\n8. Factorial\n9. Inverse\n10. Currency\n11. Length\n12. Time\n13. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulodivision\n6. Power\n7. Square_root\n8. Factorial\n9. Evenodd\n10. isprime\n11. BMI\n12. Age_calculator\n13. blood_pressure\n14. blood_sugar\15. BPM\16. pythogaras\17. pound_to_kg\18. mile_to_km\19. celsius_to_faranheit\20. inch_to_cm\21. pound_to_kg\22. sine\23. cosine\24. tangent\25. sineh\26. cosineh\27. tangenth\28. rightshift\29. leftshift\30. bit_and\31. bit_or\32. bit_xor\33. bit_complement\34. Exit");
     printf("\n\tEnter your choice\n");
-   
      __fpurge(stdin);
     scanf("%d", &calculator_operation);
-
     if(EXIT == calculator_operation)
     {
         printf("\nThank you. Exiting the Application\n");
@@ -146,6 +141,10 @@ void calculator_menu(void)
            blood_sugar(float sugar_level);
            __fpurge(stdin);
            break;
+       case BPM:
+           BPM(int heart_beat);
+           __fpurge(stdin);
+           break;
        case PYTHOGORAS:
            pythogoras(int side1,int side2);
            __fpurge(stdin);
@@ -209,14 +208,13 @@ void calculator_menu(void)
        case INCH_TO_CM:
           inch_to_cm(int length);
            break; 
-       case 34:
+       case 35:
             exit(0);
             break; 
         default:
             printf("\n\t---It should never come here---\n");
     }
 }
-
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
