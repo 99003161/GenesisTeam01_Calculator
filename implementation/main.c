@@ -65,7 +65,7 @@ void calculator_menu(void)
     {
         printf("\n\tEnter your Numbers with space between them\n");
         __fpurge(stdin);
-        scanf("%d %d", &calculator_operand1, &calculator_operand2);
+        scanf("%d %d", &operand1, &operand2);
     }
     else
     {
@@ -110,14 +110,10 @@ void calculator_menu(void)
             __fpurge(stdin);
             break;
           case ISPRIME:
-            printf("\n\t1 / %d = %d\nEnter to continue", 
-            operand1, 
             isprime(operand1);
             __fpurge(stdin);
             break;
         case EVENODD:
-            printf("\n\t%d US Dolars = %d Indian Rupees\nEnter to continue", 
-            operand1, 
             evenodd(operand1);
             __fpurge(stdin);
             break;
