@@ -24,7 +24,7 @@ int blood_pressure(float bp_rate);
 int blood_sugar(float sugar_level);
 int BPM(int heart_beat);
 int pythogoras(int side1,int side2);
-int pound_to_kg(int weight);
+float pound_to_kg(int weight);
 int mile_to_km(int distance);
 int celsius_to_faranheit(int temperature);
 int inch_to_cm(int length);
