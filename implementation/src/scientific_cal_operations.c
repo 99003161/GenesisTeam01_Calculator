@@ -151,3 +151,41 @@ return (cosh(x));
  {
 return (tanh(x));
 }
+
+int right_shift(int num, int i)
+{
+	int result;
+	result=num>>i;
+	return result;
+}	
+int left_shift(int num, int i)
+{
+	int result;
+	result=num<<i;
+	return result;
+}
+
+int bit_and(int a, int b)
+{
+	int result;
+	result= a&b;
+	return result;
+}
+ int bit_or(int a, int b)
+{
+	int result;
+	result= a|b;
+	return result;
+}
+int bit_xor(int a, int b)
+{
+	int result;
+	result= a^b;
+	return result;
+}
+int bit_complement(int a)
+{
+	int result;
+	result= ~a;
+	return result;
+}
