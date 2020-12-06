@@ -137,6 +137,22 @@ float pythogoras(int side1,int side2)
 {
     return sqrt((side1*side1)+(side2*side2));
 }
+int pound_to_kg(int weight)
+{
+    return (weight*0.453592);
+}
+int mile_to_km(int distance)
+{
+    return (distance*1.60934);
+}
+int celsius_to_faranheit(int temp)
+{
+    return ((temp*(9/5))+32);
+}
+int inch_to_cm(int len)
+{
+    return (len*2.54);
+}
 float power(float x, float y)
 
 {
