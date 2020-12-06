@@ -1,5 +1,7 @@
-#include "unity.h"
+
 #include <scientific_cal_operations.h>
+#include "unity.h"
+#include "unity_internals.h"
 #define PROJECT_NAME    "Calculator"
 
 /* Prototypes for all the test functions */
