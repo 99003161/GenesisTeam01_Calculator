@@ -1,4 +1,6 @@
 #include "scientific_cal_operations.h"
+#include "math.h"
+#include "bits/stdc++.h"
 #define PI 3.14159265
 int add(int operand1, int operand2)
 {
