@@ -116,19 +116,6 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    return final_year; 
 }
 
-float sin_op(float operand)
-{
- return sin(operand);
-}
-float cos_op(float operand)
-{
-	return cos(operand);
-}
-
-float tan_op(float operand)
-{
-    return tan(operand);
-}
 
 int blood_pressure(float bp_rate)
 {
