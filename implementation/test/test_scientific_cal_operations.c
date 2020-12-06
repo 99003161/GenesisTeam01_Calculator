@@ -110,7 +110,7 @@ void test_cu(void)
 }
 void test_BMI(void)
 {
-    TEST_ASSERT_EQUAL(8,BMI(200,5);
+    TEST_ASSERT_EQUAL(8,BMI(200,5));
 }
 //void test_age_calculator(void)
 void test_blood_pressure(void)
