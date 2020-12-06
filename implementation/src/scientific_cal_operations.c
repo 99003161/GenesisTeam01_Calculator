@@ -1,6 +1,5 @@
-  
-#include <scientific_cal_operations.h>
-
+#include "scientific_cal_operations.h"
+#define PI 3.14159265
 int add(int operand1, int operand2)
 {
     return operand1 + operand2;
@@ -10,12 +9,12 @@ int subtract(int operand1, int operand2)
     return operand1 - operand2;
 }
 
-    int multiply(int operand1, int operand2)
+int multiply(int operand1, int operand2)
 {
     return operand1 * operand2;
 }
 
-    int divide(int operand1, int operand2)
+ int divide(int operand1, int operand2)
 {
     if(0 == operand2)
         return 0;
@@ -29,7 +28,7 @@ int modulodivision(int operand1, operand2)
     else
         return operand1 % operand2;
 }
-int prime(int operand1)
+int isprime(int operand1)
 {   int flag=0;
     for (int i = 2; i <= operand1 / 2; ++i) 
     {
@@ -90,20 +89,10 @@ int cu(int operand1)
   result = cbrt(operand1);
   return result; 
 }
-int power(int base, int component)
-{
-    int result=1;
-    for(exponent;exponent>0;exponent--)
-    {
-        result=result*base;
-    }
-    return result;
-}
 float BMI(float weight,float height)
 {
 	return (weight/(height*height))
 }
-
 int age_calculator(int present_date, int present_month, int present_year, int birth_date, int birth_month, int birth_year) {
    if (birth_date > present_date) {
       present_month = present_month - 1;
@@ -114,18 +103,6 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    int final_year = present_year - birth_year;
    return final_year; 
 }
-float sin_op(float operand)
-float sin(float operand)
-{
- return sin(operand);
-}
-float cos_op(float operand)
-{
-	return cos(operand);
-}
-float tan_op(float operand)
-{
-    return tan(operand);
 int blood_pressure(float bp_rate)
 {
     if((bp_rate>=80)&&(bp_rate<=120))
@@ -150,13 +127,27 @@ float power(float x, float y)
 {
     return (pow(x,y));
 }
-float sine(float  x);
-float cosine(float x);
-float tangent(float x);
-float sineh(float x);
-float cosineh(float x);
-float tangenth(float x);
-float logten(float x);
-float squareroot(float x);
-float exponent(float x);
-float power(float x,float y);
+float sine(float x)
+{
+return (sin (x*PI/180));
+}
+float cosine(float x)
+ {
+return (cos (x*PI/180));
+}
+float tangent(float x)
+{
+return (tan(x));
+}
+float sineh(float x)
+{
+return (sinh(x));
+}
+float cosineh(float x)
+{
+return (cosh(x));
+}
+ float tangenth(float x)
+ {
+return (tanh(x));
+}

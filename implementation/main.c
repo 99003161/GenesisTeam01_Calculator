@@ -1,5 +1,4 @@
 #include <scientific_cal_operations.h>
-  #include <math.h>
 
 /* Status of the operation requested */
 #define VALID   (1)
@@ -13,7 +12,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULO, POWER, SQUARE_ROOT, FACTORIAL, INVERSE, CURRENCY, LENGTH, TIME, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULODIVISION,ISPRIME,EVENODD,FACTORIAL,SQ,CU,BMI,AGE_CALCULATOR,BLOOD_PRESSURE,BLOOD_SUGAR,PYTHOGORAS,POWER,SINE,COSINE,TANGENT, SQUARE_ROOT, FACTORIAL, INVERSE, CURRENCY, LENGTH, TIME, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
