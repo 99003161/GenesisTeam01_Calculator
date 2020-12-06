@@ -106,7 +106,7 @@ void test_sq(void)
 }
 void test_cu(void)
 {
-    TEST_ASSERT_EQUAL(3,cu(9));
+    TEST_ASSERT_EQUAL(2,cu(8));
 }
 void test_BMI(void)
 {
