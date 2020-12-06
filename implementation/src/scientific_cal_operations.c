@@ -76,7 +76,7 @@ int factorial(int operand1)
        // printf("Factorial of %d = %llu", operand1, fact);
     }
 }
-/*int sq(int operand1)
+int sq(int operand1)
 {
     int result;
   result = sqrt(operand1);
@@ -88,7 +88,7 @@ int cu(int operand1)
    int result;
   result = cbrt(operand1);
   return result; 
-}*/
+}
 int BMI(int weight,int height)
 {
 	return (weight/(height*height));
@@ -127,11 +127,11 @@ int BPM(int heart_rate)
     }
     return 0;
 }
-/*
+
 int pythogoras(int side1,int side2)
 {
     return sqrt((side1*side1)+(side2*side2));
-}*/
+}
 int pound_to_kg(int weight)
 {
     return (weight*0.453592);
@@ -148,7 +148,7 @@ int inch_to_cm(int length)
 {
     return (length*2.54);
 }
-/*
+
 int power(int operand1, int operand2)
 {
     return (pow(operand1,operand2));
@@ -177,7 +177,6 @@ float cosineh(float angle)
  {
     return (tanh(angle));
 }
-*/
 int right_shift(int operand, int shift_value)
 {
 	int result;
