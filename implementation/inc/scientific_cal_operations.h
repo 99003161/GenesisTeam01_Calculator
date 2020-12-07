@@ -18,7 +18,7 @@ int evenodd(int operand1);
 int factorial(int operand1);
 int sq(int operand1);
 int cu(int operand1);
-float BMI(int weight,int height);
+float BMI(float weight,float height);
 int age_calculator(int present_date, int present_month, int present_year, int birth_date, int birth_month, int birth_year);
 int blood_pressure(float bp_rate);
 int blood_sugar(float sugar_level);
