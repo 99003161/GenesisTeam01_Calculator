@@ -136,10 +136,6 @@ int BPM(int heart_rate)
     return 0;
 }
 
-int pythogoras(int side1,int side2)
-{
-    return sqrt((side1*side1)+(side2*side2));
-}
 float pound_to_kg(int weight)
 {
     return (weight*0.453592);
