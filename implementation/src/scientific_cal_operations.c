@@ -1,8 +1,5 @@
-
-  
-//#include "scientific_cal_operations.h"
-=======
- #include <calculator_operations.h>
+ 
+#include "scientific_cal_operations.h"
 
 int add(int operand1, int operand2)
 {
