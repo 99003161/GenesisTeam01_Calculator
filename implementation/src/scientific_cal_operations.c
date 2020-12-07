@@ -30,7 +30,7 @@ int modulodivision(int operand1, int operand2)
     else
         return operand1 % operand2;
 }
-int prime(int operand1)
+int isprime(int operand1)
 {   int flag=0;
     for (int i = 2; i <= operand1 / 2; ++i) 
     {
