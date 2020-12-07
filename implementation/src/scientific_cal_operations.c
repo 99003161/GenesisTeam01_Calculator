@@ -117,16 +117,12 @@ int age_calculator(int present_date, int present_month, int present_year, int bi
    int final_year = present_year - birth_year;
    return final_year; 
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 float sin_op(float operand)
 =======
-<<<<<<< HEAD
-=======
->>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
+
 float sin(float operand)
->>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
+
 {
  return sin(operand);
 }
@@ -134,11 +130,6 @@ float cos_op(float operand)
 {
 	return cos(operand);
 }
-
-<<<<<<< HEAD
-=======
->>>>>>> 455dc37421b38ecc5bf390be322f84290c1b373d
-<<<<<<< HEAD
 float tan_op(float operand)
 {
     return tan(operand);
@@ -168,11 +159,7 @@ float power(float x, float y)
 {
     return (pow(x,y));
 }
-=======
->>>>>>> c8663133c0f93e6bdfb6b75b67e6f454dc32dc35
->>>>>>> 0637bd22cd5a4be5549feccfb90def3487ba4e8d
->>>>>>> dc8ef4f4c8d41226f168f801220bed7f74f85ac0
-=======
+
 #include "scientific_cal_operations.h"
 #define PI 3.14159265
 int add(int operand1, int operand2)
@@ -389,4 +376,4 @@ int bit_complement(int operand3)
 	result= ~operand3;
 	return result;
 }
->>>>>>> 718c71f9f0e4c160f21040ebfcf2dbc6b86585ab:implementation/src/scientific_cal_operations.c
+
