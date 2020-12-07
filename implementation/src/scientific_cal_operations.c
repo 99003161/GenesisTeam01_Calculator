@@ -1,5 +1,4 @@
-<<<<<<< HEAD:3_Implementation/src/scientific_cal_operations.c
-<<<<<<< HEAD
+
   
 //#include "scientific_cal_operations.h"
 =======
