@@ -1,11 +1,3 @@
-<<<<<<< HEAD:3_Implementation/test/test_scientific_cal_operations.c
-#include <CUnit/Basic.h>
-#include <CUnit/CUnit.h>
-
-
-#include <scientific_cal_operations.h>
-#define PROJECT_NAME    "Scientific Calculator"
-=======
 
 #include <scientific_cal_operations.h>
 #include "unity.h"
@@ -159,4 +151,3 @@ void test_bit_xor(void)
 {
   TEST_ASSERT_EQUAL(1,bit_xor(4,5));
 } 
->>>>>>> 718c71f9f0e4c160f21040ebfcf2dbc6b86585ab:implementation/test/test_scientific_cal_operations.c

@@ -1,10 +1,3 @@
-<<<<<<< HEAD:3_Implementation/main.c
-#include<stdio.h>
-int main()
-{
-    exit 0;
-}
-=======
 #include <scientific_cal_operations.h>
 
 
@@ -222,4 +215,3 @@ void calculator_menu(void)
     }
 }
 
->>>>>>> 718c71f9f0e4c160f21040ebfcf2dbc6b86585ab:implementation/main.c
